@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    background-image: url(https://kuzguncuk.comparisonator.com/static/img/stadium-image.jpg);
+    background-size: cover;
+}
+.wrapper{
+position: relative;
+    width:60%;
+    margin:100px auto;
+}
+.field {
+    overflow: hidden;
+    box-sizing:border-box;
+    background-color:green;
+    width:100%;
+    padding-top:64%;
+    position: relative;
+}
+.centerline{
+    position:absolute;
+    height:100%;
+    border:0.2vw solid white;
+    left:50%;
+    right:50%;
+}
+.halfpitch{
+    position: absolute;
+    box-sizing: border-box;
+    border:0.3vw solid white;
+    width:50%;
+    height:100%;
+    left:0px;
+    top:0px;
+}
+.halfpitch:nth-child(2){
+    border-left: none;
+    right: 0px;
+    left: unset;
+}
+.wrapper.centercircle{
+position: relative;
+width:50%;   
+}
+
+.centercircle{
+    position: absolute;
+    width:16%;
+    height:25%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    left:0px;
+    right:0.3vw;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+}
+.centercircle.little{
+    width:1.5%;
+    height:2.5%;
+    border:0.2vw solid white;
+    background-color: white;
+}
+.penaltybox.right{
+    z-index:2;
+    background-color: green;
+
+    position: absolute;
+    width:20%;
+    height:40%;
+    border:0.3vw solid white;
+    top:0px;
+    left:-4px;
+    bottom:0px;
+    margin: auto 0px;
+}
+.penaltybox.left{
+    z-index:2;
+    background-color: green;
+    position: absolute;
+    width:20%;
+    height:40%;
+    border:0.3vw solid white;
+    top:0px;
+    right:-4px;
+    bottom:0px;
+    margin: auto 0px;
+}
+.penaltybigbox.right{
+    z-index:3;
+    background-color: green;
+    overflow:hidden;
+    position: absolute;
+    width:10%;
+    height:20%;
+    border:0.3vw solid white;
+    top:0px;
+    left:-4px;
+    bottom:0px;
+    margin: auto 0px;
+}
+.penaltybigbox.left{
+    z-index:3;
+    background-color: green;
+    overflow:hidden;
+    position: absolute;
+    width:10%;
+    height:20%;
+    border:0.3vw solid white;
+    top:0px;
+    right:-4px;
+    bottom:0px;
+    margin: auto 0px;
+}
+.penaltyboxcircle.right{
+    z-index:3;
+    position: absolute;
+    width:2%;
+    height:1.5%;
+    border:0.1vw solid white;
+    border-radius: 50%;
+    left:0px;
+    right:70%;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    background-color: white;    
+}
+.penaltyboxcircle.left{
+    z-index:3;
+    position: absolute;
+    width:2%;
+    height:1.5%;
+    border:0.1vw solid white;
+    border-radius: 50%;
+    left:70%;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    background-color: white;    
+}
+.penaltyboxcirclebig.right{
+    z-index:1;
+    position: absolute;
+    width:16%;
+    height:14%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    left:0px;
+    right:59%;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    background-color:unset; 
+}
+.penaltyboxcirclebig.left{
+    z-index:1;
+    position: absolute;
+    width:16%;
+    height:14%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    left:59%;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    background-color:unset; 
+}
+.cornerlefttop{
+    position: absolute;
+    width:10%;
+    height:8%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    left:-5%;
+    top:-5%;
+}
+.cornerleftbot{
+    position: absolute;
+    width:10%;
+    height:8%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    left:-5%;
+    bottom:-5%;
+}
+.cornerrighttop{
+    position: absolute;
+    width:10%;
+    height:8%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    right:-5%;
+    top:-5%;
+}
+.cornerrightbot{
+    position: absolute;
+    width:10%;
+    height:8%;
+    border:0.3vw solid white;
+    border-radius: 50%;
+    right:-5%;
+    bottom:-5%;
+}
+</style>
+
+
+
+
+
+
+<body>
+<div>
+    <div class="wrapper">
+        <div class="field">
+            <div class="halfpitch">
+                <div class="penaltybox right"></div>
+                <div class="penaltybigbox right"></div>
+                <div class="penaltyboxcircle right"></div>
+                <div class="penaltyboxcirclebig right"></div>
+                <div class="cornerlefttop"></div>
+                <div class="cornerleftbot"></div>
+            </div>
+            <div class="halfpitch">
+                <div class="penaltybox left"></div>
+                <div class="penaltybigbox left"></div>
+                <div class="penaltyboxcircle left"></div>
+                <div class="penaltyboxcirclebig left"></div>
+                <div class="cornerrighttop"></div>
+                <div class="cornerrightbot"></div>
+            </div>
+            <div class="centercircle"></div>
+            <div class="centercircle little"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
